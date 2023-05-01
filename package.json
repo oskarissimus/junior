@@ -12,10 +12,28 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "junior",
+          "title": "Junior",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "junior": [
+        {
+          "id": "junior.exampleView",
+          "name": "Example View"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "junior.helloWorld",
-        "title": "Hello World"
+        "title": "Hello World",
+        "icon": "media/icon.svg"
       }
     ]
   },
